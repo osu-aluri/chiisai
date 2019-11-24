@@ -17,7 +17,7 @@ module.exports = function (client) {
 
                 const embed = new Discord.RichEmbed()
                     .setTitle("Recent Score For " + msg)
-                    .setURL("https://yozora.pw/u/" + recentScore[0].userid)
+                    .setURL("https://minase.tk/u/" + recentScore[0].userid)
                     .setColor(hex)
                     .setDescription(recentScore[0].song_name)
                     .setImage("https://assets.ppy.sh/beatmaps/" + recentScore[0].beatmapset_id + "/covers/cover.jpg")
