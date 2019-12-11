@@ -5,7 +5,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 const token = config.bot.token;
-
+client.config = config;
 client.login(token);
 global.naughtyWords = config.blacklisted_words;
 
@@ -38,3 +38,4 @@ require("./cmd/faq")(client)
 // Player Reporting
 require("./cmd/pr")(client)
 require("./handlers/playerReportingListener")(client)
+require('./handlers/RankedBeatmapHandler')(client)
